@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 10px;
+    background: #f4f4f4;
+    margin-top: 5px;
+    cursor: pointer;
+}
+li:hover {
+    background: #e2e2e2;
+}
+ul li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+ul li.completed:hover {
+    background: #d4d4d4;
+}
+ul li .delete {
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
+ul li .delete:hover {
+    color: darkred;
+}
+.nav {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 59px;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: horizontal;
+}
