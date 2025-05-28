@@ -113,5 +113,3 @@ function loadTasks() {
         taskList.appendChild(taskItem);
     });
 }
-
-

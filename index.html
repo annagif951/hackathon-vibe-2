@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Task Manager</h1>
-    <p>Manage your tasks efficiently!</p>
-    <nav>
-        <ul>
+    <header>
+        <h1>Task Manager</h1>
+        <p>Manage your tasks efficiently!</p>
+        <nav>
+         <ul>
             <li class="nav"><a href="#addTask">Add Task</a></li>
             <li class="nav" ><a href="#viewTasks">View Tasks</a></li>
             <li class="nav"><a href="#filterTasks">Filter Tasks</a></li>
@@ -21,16 +22,14 @@
             <li class="nav"><a href="#logout">Logout</a></li>
         </ul>
 
-    </nav>
-    <label for="taskInput">Add a new task:</label>
-
-
-
-
-    <input type="text" id="taskInput" placeholder="Enter a task">
+        
+    </header>
+    <main>
+        <label for="taskInput">Add a new task:</label>
+     <input type="text" id="taskInput" placeholder="Enter a task">
     <button onclick="addTask()">Add Task</button>
     <ul id="taskList"></ul>
-
+    <br>
     <label for="filter">Filter tasks:</label>
     <select id="filter" onchange="filterTasks()">
     <option value="all">All</option>
@@ -38,10 +37,30 @@
     <option value="pending">Pending</option>
     <option value="highPriority">High Priority</option>
     <option value="mediumPriority">Medium Priority</option>
+
 </select>
+ <!-- Contact Form -->
+    <h3>contact</h3> 
+    <form id="contactForm">
+         <label for="contactName">Name</label>
+            <input type="text" id="contactName" placeholder="joe">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" placeholder="joe @example.com>">
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="1234">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" placeholder="Your Message"></textarea>
+            <button type="button" onclick="submitContactForm()">Submit</button>
+            <button type="button" onclick="cancel">cancel</button>
 
 
 
-    <script src="script.js"></script>
+        
+ </main>
+ <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
